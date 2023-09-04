@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    #terminal  {
+      height: 400px; /* Adjust the height to your preferred size */
+      width: 80%; /* Adjust the width as needed */
+      border: 1px solid #ccc;
+      padding: 10px;
+      overflow: auto; /* Add a scrollbar when content exceeds the height */
+      font-family: monospace; /* Use a monospace font for a terminal-like appearance */
+    }
+    .options {
+      padding: 0.75em;
+    }
+    .info {
+      float: right;
+    }
+    #connect {
+      margin-right: 2em;
+    }
+    label.checkbox {
+      margin-right: 1em;
+    }
+  </style>
+</head>
+<body>
+<div class="options">
+  <label for="ports">Port:</label>
+  <select id="ports">
+    <option value="prompt">Click 'Connect' to add a port...</option>
+  </select>
+  <button id="connect">Connect</button>
+
+  
+  <div id="terminal" style="display: none;"></div> <input type="text" id="textInput" >
+<script type="module" src="/src/index.ts"></script>
+</body>
+</html>
